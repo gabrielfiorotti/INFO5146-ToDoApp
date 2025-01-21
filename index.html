@@ -15,14 +15,6 @@
       <button id="addTaskBtn">Add Task</button>
       <ul id="taskList"></ul>
     </div>
-    <script src="app.js"></script>
-    <script>
-      if ("serviceWorker" in navigator) {
-        navigator.serviceWorker
-          .register("/INFO5146-ToDoApp/service-worker.js")
-          .then((reg) => console.log("Service Worker Registered"))
-          .catch((err) => console.error("Service Worker Error:", err));
-      }
-    </script>
+    <script type="module" src="app.js"></script>
   </body>
 </html>
